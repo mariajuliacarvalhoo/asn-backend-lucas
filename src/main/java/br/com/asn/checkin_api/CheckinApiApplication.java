@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CheckinApiApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(CheckinApiApplication.class, args);
 	}
 
