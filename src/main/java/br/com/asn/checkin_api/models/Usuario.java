@@ -11,11 +11,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "users")
+@Table(name = "usuarios")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
