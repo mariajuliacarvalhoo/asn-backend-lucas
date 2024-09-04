@@ -28,10 +28,10 @@ public class Evento {
     private String descricao;
 
     @Column
-    private LocalDateTime data;
+    private LocalDateTime dataHora;
 
     @Column
-    private int horaaula;
+    private Integer horaAula;
 
     @Column
     private String curso;
