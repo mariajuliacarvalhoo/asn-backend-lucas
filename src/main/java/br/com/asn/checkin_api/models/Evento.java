@@ -42,4 +42,9 @@ public class Evento {
     @Column
     private Boolean status;
 
+    @Column
+    private String palestrante;
+
+    @Column
+    private String profissao;
 }
