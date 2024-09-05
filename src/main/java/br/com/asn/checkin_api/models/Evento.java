@@ -2,18 +2,14 @@ package br.com.asn.checkin_api.models;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "evento")
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class Evento {
@@ -46,5 +42,19 @@ public class Evento {
     private String palestrante;
 
     @Column
-    private String profissao;
+    private String profissao_palestrante;
+
+    public Evento(String titulo, String descricao, LocalDateTime dataHora, Integer horaAula, String curso, String local, Boolean status, String palestrante, String profissao) {
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.dataHora = dataHora;
+        this.horaAula = horaAula;
+        this.curso = curso;
+        this.local = local;
+        this.status = status;
+        this.palestrante = palestrante;
+        this.profissao_palestrante = profissao;
+    }
+
+
 }
