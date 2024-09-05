@@ -8,6 +8,5 @@ import java.util.List;
 public interface EventoRepository extends JpaRepository<Evento, String> {
 
     List<Evento> findByStatusTrue();
-    List<Evento> findByUsuarioId(String usuarioId);
 
 }
