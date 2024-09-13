@@ -36,7 +36,7 @@ public class EventoService {
         return eventoRepository.findByStatusTrue();
     }
 
-    public Optional<Evento> GetEventoById(String id){
+    public Optional<Evento> getEventoById(String id){
         return eventoRepository.findById(id);
     }
 
