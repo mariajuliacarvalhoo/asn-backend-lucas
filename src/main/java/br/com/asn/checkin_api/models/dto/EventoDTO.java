@@ -7,9 +7,8 @@ import lombok.Getter;
 import java.time.LocalDateTime;
 
 @Data
-@Getter
 public class EventoDTO {
-
+    private String id;
     private String titulo;
     private String descricao;
     private LocalDateTime dataHora;
@@ -18,10 +17,6 @@ public class EventoDTO {
     private String local;
     private Boolean status;
     private String palestrante;
-    private String profissao_palestrante;
-
-    public Evento eventoConverter(){
-        return new Evento(titulo, descricao, dataHora, horaAula, curso, local, status, palestrante, profissao_palestrante);
-    }
+    private String profissaoPalestrante;
 
 }
