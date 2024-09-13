@@ -42,19 +42,7 @@ public class Evento {
     private String palestrante;
 
     @Column
-    private String profissao_palestrante;
-
-    public Evento(String titulo, String descricao, LocalDateTime dataHora, Integer horaAula, String curso, String local, Boolean status, String palestrante, String profissao) {
-        this.titulo = titulo;
-        this.descricao = descricao;
-        this.dataHora = dataHora;
-        this.horaAula = horaAula;
-        this.curso = curso;
-        this.local = local;
-        this.status = status;
-        this.palestrante = palestrante;
-        this.profissao_palestrante = profissao;
-    }
+    private String profissaoPalestrante;
 
 
 }
