@@ -1,9 +1,8 @@
 package br.com.asn.checkin_api.models.dto;
 
-import br.com.asn.checkin_api.models.Evento;
-import lombok.Data;
-
 import java.time.LocalDateTime;
+
+import lombok.Data;
 
 @Data
 public class EventoDTO {
